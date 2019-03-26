@@ -39,7 +39,7 @@ html(lang="en")
         main.main-container
             // articals
             section.articals
-                time(datatime="2019-03-18")
+                time(datetime="2019-03-18")
                 ul
                 - for( var i=0; i<10; i++)
                     li
@@ -71,6 +71,29 @@ html(lang="en")
                     +news("news", "image4.jpg", "man")
                         | After an “identity crisis,” Social Capital CEO Chamath Palihapitiya says he’s taught himself how to be happy again
                         time(datetime="2016-03") March 16
+            
+            // discussions
+            section.discuss
+                .stock
+                    ul.stock__list
+                        li S&P 2,832.94 
+                            span.stock__up 0.37%
+                        li Dow 25,914.1
+                            span.stock__up 0.25%
+                        li Nasdaq 7,714.48
+                            span.stock__up 0.34%
+                    p Last Updated: 
+                        time(datetime="2019-03-18") 03/18/2019
+                .live-disc
+                    h3.live-disc__title Live Discussins
+                    ul.live-disc__list
+                        li CommPost Live with Alexandra Petri / 11AM
+                        li Chatological Hummor(Mar.19) / 12PM
+                        li Baggage Check Live (March 19) / 1PM
+            
+                // empty-block
+                .block-empty
+                
 
 
             

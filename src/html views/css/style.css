@@ -36,6 +36,7 @@ figure {
     margin: 0 auto;
     font-size: 18px;
     font-weight: 500;
+    color: #2A2A2A; 
 }
 
 .logo {
@@ -51,7 +52,7 @@ figure {
 }
 
 .nav__link--active {
-    color: red;
+    color: #DC1919;
 }
 
 .nav a {
@@ -60,19 +61,19 @@ figure {
 }
 
 .nav a:hover {
-    color: red;
+    color: #DC1919;
+};
 }
 
-.weather {
-    display: flex;
-    align-items: cetner;
+li.weather {
+    /* display: flex;
+    align-items: cetner; */
 }
 .weather img {
     margin-right: 5px;
 }
 
 .weather b {
-    align-self: center;
     font-weight: normal;
     position: relative;
 }
@@ -236,4 +237,76 @@ li.slider__pagination--active {
     font-weight: 300;
     bottom: 10px;
     right: 10px;
+}
+
+/*_______________discuss_______________*/
+.discuss {
+   grid-area: discuss;
+   display: grid;
+   grid-template-columns: 220px 320px auto;
+   grid-gap: 20px;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 20px;
+   color: #0D0D0D;
+}
+
+.stock, .live-disc, .block-empty {
+   background-color: #F2F1F0;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+}
+
+.stock__list li {
+    min-height: 40px;
+    padding: 0 15px;
+    border-bottom: 1px solid #747474;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stock__up {
+    color: #2A8538;
+}
+
+.stock__up::before {
+    content: '+';
+}
+
+.stock__up::after {
+    content: '\2191';
+    font-size: 20px;
+}
+
+.stock p {
+    font-size: 9px;
+    color: #747474;
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* ___live-discussions___*/
+
+.live-disc__title {
+    margin-top: 0;
+    position: relative;
+}
+
+.live-disc__title::before {
+   content: '';
+   width: 30px;
+   height: 3px;
+   background-color: #737373;
+   position: absolute;
+   bottom: -5px;
+}
+
+.live-disc__list li {
+    min-height: 40px;
+}
+
+.block-empty {
+    width: auto;
+    height: auto;
 }
