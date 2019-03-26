@@ -1,3 +1,12 @@
 mixin nav_link(className, href, text)
     li(class= className + "__item")
-        a(class= className + "__link" href= href)= text
+        a(class= className + "__link" href= href)&attributes(attributes)= text
+
+
+mixin news(className, img, alt)
+    li(class= className + "__item")
+        figure(class= className + "__content")
+            p
+                img(src="img/" + img alt= alt)
+            figcaption
+                block

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/><link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600|Sawarabi+Mincho" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalise.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <title>Test maket</title>
@@ -15,7 +15,7 @@
         <div class="logo">LIVE</div>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#">news</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--active" href="#">news</a></li>
             <li class="nav__item"><a class="nav__link" href="#">sports</a></li>
             <li class="nav__item"><a class="nav__link" href="#">life</a></li>
             <li class="nav__item"><a class="nav__link" href="#">money</a></li>
@@ -37,6 +37,7 @@
     <!-- /header-->
     <!-- main-->
     <main class="main-container">
+      <!-- articals-->
       <section class="articals">
         <time datatime="2019-03-18"></time>
         <ul></ul>
@@ -71,7 +72,13 @@
           <Lorem>ipsum dolor sit amet consectetur, adipisicing elit. Culpa fugit atque laborum esse maxime harum quam corrupti voluptas ipsa, odit, iste ipsum quas consequuntur suscipit! Incidunt officiis odit porro! Quaerat.</Lorem>
         </li>
       </section>
-      <section class="slider"><img src="img/ilon.jpg" alt="" height="600px" width="845px"/>
+      <!-- slider-->
+      <section class="slider">
+        <ul class="slider__list">
+          <li class="slider__item"><img src="img/ilon.jpg" alt="" height="600px" width="845px"/>
+            <blockquote>I would like to die on Mars. Just not on impact.<span>- Elon Musk</span></blockquote>
+          </li>
+        </ul>
         <ol class="slider__pagination">
           <li>slide 1</li>
           <li>slide 2</li>
@@ -79,8 +86,36 @@
           <li class="slider__pagination--active">slide 4</li>
           <li>slide 4</li>
           <li>slide 5</li>
-          <li>slide 6</li>
         </ol>
+      </section>
+      <!-- news-->
+      <section class="news">
+        <ul class="news__list">
+          <li class="news__item">
+            <figure class="news__content">
+              <p><img src="img/image2.jpg" alt="woman"/></p>
+              <figcaption>Sen. Amy Klobuchar, 2020 presidential candidate, explains how she would regulate Big Tech if she wins
+                <time datetime="2018-03">March 18</time>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="news__item">
+            <figure class="news__content">
+              <p><img src="img/image3.jpg" alt="police"/></p>
+              <figcaption>Why Facebook couldn’t stop the New Zealand shooter from streaming his attack
+                <time datetime="2017-03">March 17</time>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="news__item">
+            <figure class="news__content">
+              <p><img src="img/image4.jpg" alt="man"/></p>
+              <figcaption>After an “identity crisis,” Social Capital CEO Chamath Palihapitiya says he’s taught himself how to be happy again
+                <time datetime="2016-03">March 16</time>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </section>
     </main>
   </body>

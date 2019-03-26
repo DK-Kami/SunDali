@@ -5,6 +5,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600|Sawarabi+Mincho" rel="stylesheet"> 
         link(rel="stylesheet", href="css/normalise.css")
         link(rel="stylesheet", href="css/style.css")
         title Test maket
@@ -15,7 +16,7 @@ html(lang="en")
                 .logo LIVE
                 nav.nav
                     ul.nav__list
-                        +nav_link("nav", "#", "news")
+                        +nav_link("nav", "#", "news")(class="nav__link--active")
                         +nav_link("nav", "#", "sports")
                         +nav_link("nav", "#", "life")
                         +nav_link("nav", "#", "money")
@@ -36,22 +37,42 @@ html(lang="en")
 
         // main
         main.main-container
+            // articals
             section.articals
                 time(datatime="2019-03-18")
                 ul
                 - for( var i=0; i<10; i++)
                     li
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa fugit atque laborum esse maxime harum quam corrupti voluptas ipsa, odit, iste ipsum quas consequuntur suscipit! Incidunt officiis odit porro! Quaerat.
-
+            
+            // slider
             section.slider
-                img(src="img/ilon.jpg", alt="" height="600px" width="845px")
+                ul.slider__list
+                    li.slider__item
+                        img(src="img/ilon.jpg", alt="" height="600px" width="845px")
+                        blockquote I would like to die on Mars. Just not on impact.
+                            span - Elon Musk
 
                 ol.slider__pagination
-                    - for( var i=1; i<=6; i++)
+                    - for( var i=1; i<6; i++)
                         if (i==4)
                             li.slider__pagination--active slide #{i}
                         li slide #{i}
-                
+            
+            // news
+            section.news
+                ul.news__list
+                    +news("news", "image2.jpg", "woman")
+                        | Sen. Amy Klobuchar, 2020 presidential candidate, explains how she would regulate Big Tech if she wins
+                        time(datetime="2018-03") March 18
+                    +news("news", "image3.jpg", "police")
+                        | Why Facebook couldn’t stop the New Zealand shooter from streaming his attack
+                        time(datetime="2017-03") March 17
+                    +news("news", "image4.jpg", "man")
+                        | After an “identity crisis,” Social Capital CEO Chamath Palihapitiya says he’s taught himself how to be happy again
+                        time(datetime="2016-03") March 16
+
+
             
 
                     
