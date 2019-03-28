@@ -39,11 +39,44 @@ html(lang="en")
         main.main-container
             // articals
             section.articals
-                time(datetime="2019-03-18")
-                ul
-                - for( var i=0; i<10; i++)
+                time(datetime="2019-03-18") Monday, March 18, 2019, 22:20
+                ul.artical__list
                     li
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa fugit atque laborum esse maxime harum quam corrupti voluptas ipsa, odit, iste ipsum quas consequuntur suscipit! Incidunt officiis odit porro! Quaerat.
+                        time 21:23
+                        h3 Brexit in disarray after House speaker moves to block third vote on deal
+                        p The speaker said he would not allow the government to present Prime Minister Theresa May’s E.U. withdrawal agreement for a vote unless it was clearly different from earlier ones. The ruling stoked further uncertainty and left lawmakers stunned and wondering aloud what comes next.
+                    li
+                        time 20:51
+                        h3 Supreme Court to consider life sentences of Beltway sniper Lee Boyd Malvo
+                        p
+                            img(src="img/niga.jpg", alt="foto")
+                            | Malvo, 34, was 17 years old during the attacks in the Washington region. The high court has since ruled that mandatory life sentences without the possibility of parole are unconstitutional for those under 18
+                    li
+                        time 20:44
+                        h3 A meeting aimed to ease tensions between Muslim and Jewish Democrats. It ended with tears
+                        p Roughly a dozen House lawmakers shared their experiences with bigotry and discrimination in the wake of a controversy over remarks by Rep. Ilhan Omar (D-Minn.)
+                    li
+                        time 20:12
+                        h3 Authorities arrest suspect in shooting on Dutch tram that left 3 dead
+                        p A 37-year-old Turkish-born man was held in the attack in Utrecht that left five others injured. Police attributed no clear motive but earlier had not ruled out terrorism
+                    li
+                        time 19:53
+                        h3 A Mar-a-Lago Weekend and an Act of God: Trump’s History With Deutsche Bank
+                        p As a developer, Donald Trump borrowed more than $2 billion from Deutsche Bank. Once he was president, employees were told not to utter his name.
+                        p Now Mr. Trump’s financial ties with the bank are the subject of investigations by two congressional committees and the New York attorney general.
+                    li
+                        time 18:40
+                        h3 Decision may hasten demise of May’s strategy
+                        p When the House of Commons chose a new Speaker almost a decade ago the challenge facing the ten candidates was clear: to solve the expenses scandal and modernise parliament. Sir George Young and Dame Margaret Beckett, both veteran former (and in Sir George’s case, future) cabinet ministers, came second and third. Two serving deputy Speakers
+                    li
+                        time 17:33
+                        h3 ‘Dignity. Grace. Courage.’: New Zealand’s prime minister lauded for her response to the mosque shootings
+                        p While her tenure at home has had mixed reviews, Prime Minister Jacinda Ardern has been perceived abroad as an inspirational leader for the modern age. That image has only been bolstered as she seeks to comfort her shaken nation
+                
+                a.artical__link.link(href="#") 
+                    .link__inner More news
+
+                        
             
             // slider
             section.slider
@@ -90,11 +123,46 @@ html(lang="en")
                         li CommPost Live with Alexandra Petri / 11AM
                         li Chatological Hummor(Mar.19) / 12PM
                         li Baggage Check Live (March 19) / 1PM
-                    a.live-disc__link.link(href="#") More discussions
+                    
+                    a.live-disc__link.link(href="#") 
+                        .link__inner More discussions
             
                 // empty-block
                 .block-empty
                 
+            section.read
+                h2.read__title Most read
+                ul.read__list
+                    li.read__item
+                        span 1
+                        p A ‘pathetic life’: Meghan McCain escalates her pushback against Trump
+                        img(src="img/image5.jpg" atl="foto")
+                    li.read__item
+                        span 2
+                        p The meeting was supposed to ease tensions between Muslim and Jewish Democrats. It ended with tears.
+                        img(src="img/image6.jpg" atl="foto")
+                    li.read__item
+                        span 3
+                        p Brexit in disarray after House speaker moves to block third vote on deal
+                        img(src="img/image7.jpg" atl="foto")
+                    li.read__item
+                        span 4
+                        p New Zealand’s prime minister receives worldwide praise for her response to the mosque shootings
+                        img(src="img/image8.jpg" atl="foto")
+                    li.read__item
+                        span 5
+                        p Steve King posts meme warning that red states have ‘8 trillion bullets’ in event of civil war
+                        img(src="img/image9.png" atl="foto")
+            
+            section.middle-block
+
+            section.big-block
+
+        // footer
+        footer.main-footer
+            .main-footer__info
+                
+
 
 
             
