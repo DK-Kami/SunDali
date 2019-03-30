@@ -1,20 +1,13 @@
 <template>
   <div id="app">
-    <the-header-app/>
-    <the-main-app/>
+    SunDali
   </div>
 </template>
 
 <script>
-import TheHeaderApp from "./components/TheHeaderApp";
-import TheMainApp from "./components/TheMainApp.vue";
 
 export default {
   name: "App",
-  components: {
-    TheHeaderApp,
-    TheMainApp
-  }
 };
 </script>
 
